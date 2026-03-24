@@ -4,11 +4,11 @@
   <Parent />
   <Previous>Liability</Previous>
   <LastModifiedBy>ClareStone</LastModifiedBy>
-  <LastModifiedOn>2026-03-24T10:18:22.7831497+00:00</LastModifiedOn>
+  <LastModifiedOn>2026-03-24T10:20:59.8452284+00:00</LastModifiedOn>
   <CreatedBy>ClareStone</CreatedBy>
   <CreatedOn>2026-03-24T10:10:15.8798686+00:00</CreatedOn>
   <Folder>false</Folder>
-  <LastModified>2026-03-24T10:18:22.7831497+00:00</LastModified>
+  <LastModified>2026-03-24T10:20:59.8452284+00:00</LastModified>
   <Notes />
   <OpeningInformation />
   <IsExpanded>true</IsExpanded>
@@ -643,17 +643,17 @@ Return (ClaimPV(t + 1) + ClaimAmt(t + 1)) * DiscRate(t + 1)</Value>
       <Parent>Claim</Parent>
       <Previous />
       <LastModifiedBy>ClareStone</LastModifiedBy>
-      <LastModifiedOn>2026-03-24T10:10:15.8958682+00:00</LastModifiedOn>
+      <LastModifiedOn>2026-03-24T10:20:59.8452284+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
       <CreatedOn>2026-03-24T10:10:15.8958682+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>2026-03-24T10:10:15.8958682+00:00</LastModified>
+      <LastModified>2026-03-24T10:20:59.8452284+00:00</LastModified>
       <Notes>Proportion of in force policies that claim</Notes>
       <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value>If t &lt;= Max(PeriodIF(), 0) Then Return 0
-    Return mortTable.Value(CInt(AgeIF(t)), Sex) * mortLoading.Value(Table.GetLookUp(OccupationClass, SmokerStatus)) * 1.1</Value>
+    Return mortTable.Value(CInt(AgeIF(t)), Sex) * mortLoading.Value(Table.GetLookUp(OccupationClass, SmokerStatus)) * (1 + claimRateStressPerc)</Value>
       <Format>#,##0.000000</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
