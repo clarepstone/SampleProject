@@ -4,11 +4,11 @@
   <Parent />
   <Previous>Liability</Previous>
   <LastModifiedBy>ClareStone</LastModifiedBy>
-  <LastModifiedOn>2026-03-24T10:10:15.9038708+00:00</LastModifiedOn>
+  <LastModifiedOn>2026-03-24T10:18:22.7831497+00:00</LastModifiedOn>
   <CreatedBy>ClareStone</CreatedBy>
   <CreatedOn>2026-03-24T10:10:15.8798686+00:00</CreatedOn>
   <Folder>false</Folder>
-  <LastModified>2026-03-24T10:10:15.9038708+00:00</LastModified>
+  <LastModified>2026-03-24T10:18:22.7831497+00:00</LastModified>
   <Notes />
   <OpeningInformation />
   <IsExpanded>true</IsExpanded>
@@ -242,13 +242,13 @@
     <Parameter>
       <Name>Basis</Name>
       <Parent />
-      <Previous />
+      <Previous>Stress Basis</Previous>
       <LastModifiedBy>ClareStone</LastModifiedBy>
-      <LastModifiedOn>2026-03-24T10:10:15.8858693+00:00</LastModifiedOn>
+      <LastModifiedOn>2026-03-24T10:17:18.0799852+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
       <CreatedOn>2026-03-24T10:10:15.8858693+00:00</CreatedOn>
       <Folder>true</Folder>
-      <LastModified>2026-03-24T10:10:15.8858693+00:00</LastModified>
+      <LastModified>2026-03-24T10:17:18.0799852+00:00</LastModified>
       <Notes />
       <OpeningInformation />
       <IsExpanded>true</IsExpanded>
@@ -296,6 +296,48 @@
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>Stress Basis</Name>
+      <Parent />
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:17:18.0849771+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:17:06.5109915+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2026-03-24T10:17:18.0849771+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>claimRateStressPerc</Name>
+      <Parent>Stress Basis</Parent>
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:18:22.7831497+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:17:23.7479652+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:18:22.7831497+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>0.10</Value>
       <Format>#,##0.00</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
