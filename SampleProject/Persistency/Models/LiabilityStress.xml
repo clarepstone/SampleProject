@@ -1,0 +1,877 @@
+<?xml version="1.0"?>
+<Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>LiabilityStress</Name>
+  <Parent />
+  <Previous>Liability</Previous>
+  <LastModifiedBy>ClareStone</LastModifiedBy>
+  <LastModifiedOn>2026-03-24T10:10:15.9038708+00:00</LastModifiedOn>
+  <CreatedBy>ClareStone</CreatedBy>
+  <CreatedOn>2026-03-24T10:10:15.8798686+00:00</CreatedOn>
+  <Folder>false</Folder>
+  <LastModified>2026-03-24T10:10:15.9038708+00:00</LastModified>
+  <Notes />
+  <OpeningInformation />
+  <IsExpanded>true</IsExpanded>
+  <Description>Liability Stress Testing Projection Model</Description>
+  <Inherit>false</Inherit>
+  <Declarations />
+  <UseDefaultExecuteCode>false</UseDefaultExecuteCode>
+  <Inputs>
+    <Input>
+      <Name>Age</Name>
+      <Parent>Personal data</Parent>
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8798686+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8798686+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.8798686+00:00</LastModified>
+      <Notes>Age at policy commencement date</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Integer</DataType>
+      <Value>35</Value>
+      <Format>#,##0</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>OccupationClass</Name>
+      <Parent>Personal data</Parent>
+      <Previous>Sex</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8798686+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8798686+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.8798686+00:00</LastModified>
+      <Notes>Occuopation Class (WhiteCollar, BlueCollar)</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>WhiteCollar</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>Personal data</Name>
+      <Parent />
+      <Previous>Policy data</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8808688+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8808688+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2026-03-24T10:10:15.8808688+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>Policy data</Name>
+      <Parent />
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8808688+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8808688+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2026-03-24T10:10:15.8808688+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>Prem</Name>
+      <Parent>Policy data</Parent>
+      <Previous>UniqueID</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8818711+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8818711+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.8818711+00:00</LastModified>
+      <Notes>Single Premium Amount</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>1500</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>Sex</Name>
+      <Parent>Personal data</Parent>
+      <Previous>Age</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8829971+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8829971+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.8829971+00:00</LastModified>
+      <Notes>Gender (M=male, F=female)</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>M</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>SmokerStatus</Name>
+      <Parent>Personal data</Parent>
+      <Previous>OccupationClass</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8838678+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8838678+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.8838678+00:00</LastModified>
+      <Notes>Smoker status (N=non-smoker, Y=smoker)</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>N</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>StartDate</Name>
+      <Parent>Policy data</Parent>
+      <Previous>Prem</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8838678+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8838678+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.8838678+00:00</LastModified>
+      <Notes>Date of policy commencement</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Date</DataType>
+      <Value>01/01/2020</Value>
+      <Format>dd/MM/yyyy</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>SumAssured</Name>
+      <Parent>Policy data</Parent>
+      <Previous>Term</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8838678+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8838678+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.8838678+00:00</LastModified>
+      <Notes>Age at policy commencement date</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>100000</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>Term</Name>
+      <Parent>Policy data</Parent>
+      <Previous>StartDate</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8848712+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8848712+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.8848712+00:00</LastModified>
+      <Notes>Policy term in years</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>20</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>UniqueID</Name>
+      <Parent>Policy data</Parent>
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8848712+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8848712+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.8848712+00:00</LastModified>
+      <Notes>Model point identifier</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>ABC123</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+  </Inputs>
+  <Params>
+    <Parameter>
+      <Name>Basis</Name>
+      <Parent />
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8858693+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8858693+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2026-03-24T10:10:15.8858693+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>Expense</Name>
+      <Parent />
+      <Previous>Mortality</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8868701+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8868701+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2026-03-24T10:10:15.8868701+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>Mortality</Name>
+      <Parent />
+      <Previous>Basis</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8868701+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8868701+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2026-03-24T10:10:15.8868701+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>dateVal</Name>
+      <Parent>Basis</Parent>
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.887877+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.887877+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.887877+00:00</LastModified>
+      <Notes>Valuation date</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Date</DataType>
+      <Value>01/01/2023</Value>
+      <Format>dd/MM/yyyy</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>expClaim</Name>
+      <Parent>Expense</Parent>
+      <Previous>expInit</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.887877+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.887877+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.887877+00:00</LastModified>
+      <Notes>Claims expenses</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>300</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>expInit</Name>
+      <Parent>Expense</Parent>
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.887877+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.887877+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.887877+00:00</LastModified>
+      <Notes>Initial expecnses</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>150</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>infRate</Name>
+      <Parent>Basis</Parent>
+      <Previous>intRatetbl</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8888851+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8888851+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.8888851+00:00</LastModified>
+      <Notes>Inflation rate</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>0.025</Value>
+      <Format>#,##0.000</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>intRatetbl</Name>
+      <Parent>Basis</Parent>
+      <Previous>dateVal</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8888851+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8888851+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.8888851+00:00</LastModified>
+      <Notes>Interest rate table</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>TableDbl</DataType>
+      <Value>IntRate</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>mortBasis</Name>
+      <Parent>Mortality</Parent>
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8898714+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8898714+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.8898714+00:00</LastModified>
+      <Notes>Mortality Basis</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>TableStr</DataType>
+      <Value>MortBasis</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>mortLoading</Name>
+      <Parent>Mortality</Parent>
+      <Previous>mortTable</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8898714+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8898714+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.8898714+00:00</LastModified>
+      <Notes>Mortality loading table</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>TableDbl</DataType>
+      <Value>MortLoading</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>mortTable</Name>
+      <Parent>Mortality</Parent>
+      <Previous>mortBasis</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.89087+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.89087+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.89087+00:00</LastModified>
+      <Notes>Mortality table</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>TableDbl</DataType>
+      <Value />
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source>mortBasis</Source>
+    </Parameter>
+  </Params>
+  <Formulae>
+    <Formula>
+      <Name>AgeIF</Name>
+      <Parent>Decrements</Parent>
+      <Previous>PropIF</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.892869+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.892869+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.892869+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>Return Math.Floor(Age + (t\12))</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>Basis</Name>
+      <Parent />
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.892869+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.892869+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2026-03-24T10:10:15.892869+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>Calculation</Name>
+      <Parent />
+      <Previous>Claim</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8938698+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8938698+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2026-03-24T10:10:15.8938698+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>Claim</Name>
+      <Parent />
+      <Previous>Expense</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8938698+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8938698+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2026-03-24T10:10:15.8938698+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>ClaimAmt</Name>
+      <Parent>Claim</Parent>
+      <Previous>ClaimRateStress</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8948691+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8948691+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.8948691+00:00</LastModified>
+      <Notes>Death benefit claims</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>If t &lt;= 0 Then Return 0
+Dim ClaimAmtPP As Double
+ClaimAmtPP = SumAssured * ClaimRateStress(t)
+Return ClaimAmtPP * PropIF(t - 1)</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>ClaimPV</Name>
+      <Parent>Calculation</Parent>
+      <Previous>ExpPV</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8958682+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8958682+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.8958682+00:00</LastModified>
+      <Notes>Present valus of claims</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>If t = ProjTerm() Then Return 0
+Return (ClaimPV(t + 1) + ClaimAmt(t + 1)) * DiscRate(t + 1)</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>ClaimRateStress</Name>
+      <Parent>Claim</Parent>
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8958682+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8958682+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.8958682+00:00</LastModified>
+      <Notes>Proportion of in force policies that claim</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>If t &lt;= Max(PeriodIF(), 0) Then Return 0
+    Return mortTable.Value(CInt(AgeIF(t)), Sex) * mortLoading.Value(Table.GetLookUp(OccupationClass, SmokerStatus)) * 1.1</Value>
+      <Format>#,##0.000000</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>Decrements</Name>
+      <Parent />
+      <Previous>Basis</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8968686+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8968686+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2026-03-24T10:10:15.8968686+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>DiscRate</Name>
+      <Parent>Basis</Parent>
+      <Previous>ProjTerm</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8968686+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8968686+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.8968686+00:00</LastModified>
+      <Notes>Monthly discount rate</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>If t &lt;= PeriodIF()
+    Return 1
+Else
+    Return 1 / (( + IntRate.Value(CInt(Floor(t / 12)))) ^ (1 / 12))
+End If    </Value>
+      <Format>#,##0.000000</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>ExpClaimAmt</Name>
+      <Parent>Expense</Parent>
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.897868+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.897868+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.897868+00:00</LastModified>
+      <Notes>Claims expenses</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>If t &lt;= 0 Then Return 0
+    Return expClaim * PropIF(t - 1) * ClaimRateStress(t) * (1 + infRate) ^ Floor((ValMonth(t) - PeriodIF()) / 12)</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>ExpInitAmt</Name>
+      <Parent>Expense</Parent>
+      <Previous>ExpClaimAmt</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.897868+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.897868+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.897868+00:00</LastModified>
+      <Notes>Initial expenses</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>If t = 1 Then Return expInit
+    Return 0</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>ExpPV</Name>
+      <Parent>Calculation</Parent>
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8988691+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8988691+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.8988691+00:00</LastModified>
+      <Notes>Present valus of expenses</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>If t = ProjTerm() Then Return 0
+Return (ExpPV(t + 1) + ExpClaimAmt(t + 1) + ExpInitAmt(t + 1)) * DiscRate(t + 1)</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>Expense</Name>
+      <Parent />
+      <Previous>Decrements</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8998673+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8998673+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2026-03-24T10:10:15.8998673+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>PeriodIF</Name>
+      <Parent>Decrements</Parent>
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.8998673+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.8998673+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.8998673+00:00</LastModified>
+      <Notes>Complete months from policy commencement date to valuation date</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Integer</DataType>
+      <Value>' Number of complete months from policy commencement to valuation date.
+Return DateSpan.TermInMonths(StartDate, dateVal)</Value>
+      <Format>#,##0</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>ProjTerm</Name>
+      <Parent>Basis</Parent>
+      <Previous>ValYear</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.9008668+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.9008668+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.9008668+00:00</LastModified>
+      <Notes>Term of policy in months</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Integer</DataType>
+      <Value>If Term &gt; IntRate.UpperLimit Then Log.Error("Projection Term exceeds bounds of IntRate table")
+Return CInt(Term * 12)</Value>
+      <Format>#,##0</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>PropIF</Name>
+      <Parent>Decrements</Parent>
+      <Previous>PeriodIF</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.9018805+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.9018805+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.9018805+00:00</LastModified>
+      <Notes>Proportion of policies still in force at the end of month t</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Integer</DataType>
+      <Value>If t &lt;= Max(0, PeriodIF())
+    Return 1
+Else
+    Return PropIF(t - 1) * (1 - ClaimRateStress(t))
+End If
+        </Value>
+      <Format>#,##0</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>Reserve</Name>
+      <Parent>Calculation</Parent>
+      <Previous>ClaimPV</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.9018805+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.9018805+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.9018805+00:00</LastModified>
+      <Notes>Reserve amount</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>If t = ProjTerm() Then Return 0
+    Return ExpPV(t) + ClaimPV(t)</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>ValMonth</Name>
+      <Parent>Basis</Parent>
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.9028774+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.9028774+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.9028774+00:00</LastModified>
+      <Notes>Number of months since valuation date</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Integer</DataType>
+      <Value>Return t - PeriodIF()</Value>
+      <Format>#,##0</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>ValYear</Name>
+      <Parent>Basis</Parent>
+      <Previous>ValMonth</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2026-03-24T10:10:15.9038708+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2026-03-24T10:10:15.9038708+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-03-24T10:10:15.9038708+00:00</LastModified>
+      <Notes>Year of valuation</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Integer</DataType>
+      <Value>Return CInt((ValMonth(t) + 11) / 12)</Value>
+      <Format>#,##0</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+  </Formulae>
+  <Runs />
+</Model>
